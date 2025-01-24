@@ -1,8 +1,3 @@
-langchain
-langchain-google-genai
-langchain-openai
-langchain-anthropic
-langchain-mistralai
-langchain-community
-PyPDF2
-tk
+pydantic
+langchain_core
+fastapi
