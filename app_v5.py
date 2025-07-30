@@ -30,7 +30,7 @@ def ai_reader(api, model, pdfs_dir, log_func):
         return
 
     # Initialize the language model
-    if 'gemini' in model:
+    if 'gemini' in model or 'o4' in model:
         llm = ChatGoogleGenerativeAI(
             model=model,
             google_api_key=api
@@ -58,7 +58,7 @@ def ai_reader(api, model, pdfs_dir, log_func):
 
     user_input = (
         "Based on the provided file, generate a file name in this format: "
-        "[title of the research]_[published year].pdf"
+        "[published year]_[title of the research].pdf"
         "Please do not give any response except for the file name. "
         "Do not include symbols like /, ~, !, @, #, or $ in the file name."
     )
@@ -124,11 +124,10 @@ class App:
         self.label_model = Label(model_frame, text="Select Model:", font=("Helvetica", 12))
         self.label_model.grid(row=0, column=0, padx=5)
         self.model_var = StringVar(model_frame)
-        self.model_var.set("gemini-2.0-flash-lite") #gemini-1.5-flash
+        self.model_var.set("gemini-2.5-flash")
 
         models = [
-            "gpt-4o", "gpt-4o-mini", "gemini-1.5-pro", "gemini-2.0-flash-lite", "gemini-1.5-flash", 
-            "open-mistral-nemo-2407", "mistral-large-2407", "claude-3-5-sonnet-20240620"
+            "gemini-2.5-flash", "o4-mini-2025-04-16"
         ]
         self.model_menu = OptionMenu(model_frame, self.model_var, *models)
         self.model_menu.grid(row=0, column=1, padx=5)
