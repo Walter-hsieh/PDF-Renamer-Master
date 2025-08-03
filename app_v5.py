@@ -61,6 +61,7 @@ def ai_reader(api, model, pdfs_dir, log_func):
         "[published year]_[title of the research].pdf"
         "Please do not give any response except for the file name. "
         "Do not include symbols like /, ~, !, @, #, or $ in the file name."
+        "If research title cannot be found, please generate one based on the content"
     )
 
     rag_prompt = ChatPromptTemplate.from_messages([
