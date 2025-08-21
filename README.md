@@ -24,7 +24,7 @@ A desktop application that automatically renames PDF files based on their conten
 
 3.  **Run the application:**
     ```bash
-    python app_v5.py
+    python app_v6.py
     ```
 
 ## Usage
@@ -33,7 +33,7 @@ A desktop application that automatically renames PDF files based on their conten
     *   You will need an API key from a supported AI provider (e.g., Google AI, OpenAI).
 
 2.  **Using the Application:**
-    *   Launch the application by running `python app_v5.py`.
+    *   Launch the application by running `python app_v6.py`.
     *   Enter your API key in the "API Key" field.
     *   Select the AI model you want to use from the dropdown menu.
     *   Click the "Select Directory" button to choose the folder containing your PDF files.
@@ -45,22 +45,23 @@ A desktop application that automatically renames PDF files based on their conten
 The following AI models are available:
 
 *   `gemini-2.5-flash`
-*   `o4-mini-2025-04-16`
+*   `gtp-o4-mini`
 
 ## Dependencies
 
 This project relies on the following Python libraries:
 
-*   pydantic
-*   langchain_core
-*   fastapi
-*   langchain
-*   langchain-community
-*   langchain-text-splitters
-*   langchain-ollama
-*   ollama
-*   chromadb
-*   pypdf
+* pydantic
+* langchain_core
+* fastapi
+* langchain
+* langchain-community
+* langchain-text-splitters
+* langchain-google-genai
+* langchain-openai
+* langchain-anthropic
+* langchain-mistralai
+* pypdf
 
 ## Contributing
 
