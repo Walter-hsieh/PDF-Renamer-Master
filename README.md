@@ -1,6 +1,6 @@
 # PDF Renamer Master
 
-![Icon](./an_AI_robot_organizes_documents.png)
+<img src="./an_AI_robot_organizes_documents.png" alt="Icon" width="250"/>
 
 A desktop application that automatically renames PDF files based on their content using large language models.
 
