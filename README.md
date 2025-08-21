@@ -4,7 +4,9 @@
 
 A desktop application that automatically renames PDF files based on their content using large language models.
 
-## Features
+## UI and Features
+
+<img width="1000" height="500" alt="UI" src="https://github.com/user-attachments/assets/e42c446b-af40-4a36-afe9-22cfcb437311" />
 
 *   Supports multiple AI models from Google and OpenAI.
 *   Simple and intuitive graphical user interface.
